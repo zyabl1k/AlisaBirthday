@@ -6,18 +6,105 @@
 body {
     background-color: #2a2a2a;
     color: #ffffff;
+    overflow-x: hidden;
+}
+
+.wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    height: 100vh;
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
     font-family: 'Rubik', sans-serif;
     gap: 20px;
+    position: relative;
+    justify-content: space-around;
+    padding-top: 80px;
 }
 
-#countdown {
+.card {
+    width: 200px;
+    height: 250px;
+    background-color: #000000;
+    padding: 10px 0px;
+    position: relative;
+}
+
+.stick {
+    font-size: 44px;
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    rotate: 20deg;
+}
+
+.stick1 {
+    font-size: 44px;
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    rotate: -20deg;
+}
+
+.card img {
+    width: 175px;
+    height: 200px;
+}
+
+.full1 {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #000;
+    gap: 10px;
+    rotate: 5deg;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+@media(max-width: 1200px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}
+
+.unknow1 {
+    display: flex;
+    font-size: 70px;
+    align-items: center;
+    justify-content: center;
+    top: 10%;
+    left: 5%;
+    rotate: -10deg;
+}
+
+.unknow2 {
+    display: flex;
+    font-size: 70px;
+    align-items: center;
+    justify-content: center;
+    top: 10%;
+    left: 5%;
+    rotate: 15deg;
+}
+
+.unknow3 {
+    display: flex;
+    font-size: 70px;
+    align-items: center;
+    justify-content: center;
+    top: 10%;
+    left: 5%;
+    rotate: 5deg;
+}
+
+.wrapper #countdown {
     font-size: 44px;
 }
 
