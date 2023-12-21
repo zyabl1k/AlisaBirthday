@@ -29,8 +29,10 @@ const closeModal = document.getElementById('closeModal');
 
 table.onclick = () => {
     modal.style.display = 'flex';
+    document.body.style.overflowY = 'hidden';
 }
 
 closeModal.onclick = () => {
     modal.style.display = 'none';
+    document.body.style.overflowY = 'auto';
 }
