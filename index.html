@@ -3,13 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/neon.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Rubik:wght@300&display=swap" rel="stylesheet">
     <title>Happy Birthday</title>
 </head>
 <body>
+
+    <div style="display: none;" class="modal" id="ModalWind">
+
+        <div class="modalHolder">
+            <div class="stMod1">
+                🥰
+            </div>
+            <div class="stMod2">
+                💓
+            </div>
+            <div class="modalHeader">
+                <h1>Любимой💕</h1>
+                <button id="closeModal"><img width="20px" src="./assets/close.svg" alt="Close"></button>
+            </div>
+            <div class="modalContent">
+                <p>
+                    Сейчас у тебя происходят плохие моменты. Где-то недопонимание, несправедливость, что-то идет не по плану или все рушится. 
+                    Такое случается и это не на всегда! Такие моменты происходят, тебе надо учится на этом, запоминать и идти дальше. 
+                    Ведь затем тебя будет ждать свет, главное не относится ко всему скептично, основываться на опыте и анализировать. 
+                    Ты у меня умница, мы многое прошли и многое нам предстоит пройти. Мы ростем и учимся вместе, чем больше узнаем, 
+                    тем больше разногласий, что закономерно, но все равно мы придем к согласию. Не дай этим трудностям взять над тобой 
+                    верх, люблю тебя безмерно!!!
+                </p>
+            </div>
+        </div>
+    </div>
+
     <ul class="lightrope">
         <li></li>
         <li></li>
@@ -54,13 +82,32 @@
         <li></li>
         <li></li>
     </ul>
+
+    <div class="buttonHolder">
+        <button class='glowing-btn' id="table">
+            <div class="holderTextBTN">
+                <span class='glowing-txt'>При<span class='faulty-letter'>ве</span>т</span>
+                <span class='glowing-txt'>Я теб<span class='faulty-letter'>я очень</span> люблю</span>
+                <span class='glowing-txt'>Наж<span class='faulty-letter'>ми на таб</span>личку</span>
+                <!-- <span class='glowing-txt'>Т<span class='faulty-letter'>Ы</span>К</span>
+                <span class='glowing-txt'>Т<span class='faulty-letter'>Ы</span>К</span>
+                <span class='glowing-txt'>Т<span class='faulty-letter'>Ы</span>К</span> -->
+            </div>
+        </button>
+    </div>
+
     <div class="wrapper" id="Wrapper">
 
         <div class="left">
-            <div class="card unknow1">
-                <!-- <img src="https://imgholder.ru/150x150/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson">
-                <p>Просто любимка</p> -->
-                ?
+            <div class="card full">
+                <div class="stick">
+                    😘
+                </div>
+                <img src="./assets/img3.JPG">
+                <div class="text_holder">
+                    <p>Очень душевная!</p>
+                    <p>Женственная!</p>
+                </div>
             </div>
             <div class="card full1">
                 <div class="stick1">
@@ -100,10 +147,15 @@
                 <p>Просто любимка</p> -->
                 ?
             </div>
-            <div class="card unknow3">
-                <!-- <img src="https://imgholder.ru/150x150/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson">
-                <p>Просто любимка</p> -->
-                ?
+            <div class="card full3">
+                <div class="stick2">
+                    🥰
+                </div>
+                <img src="./assets/img4.JPG">
+                <div class="text_holder">
+                    <p>Всегда на высоте!</p>
+                    <p>Заботливая!</p>
+                </div>
             </div>
         </div>
     </div>

@@ -22,3 +22,17 @@ let end = new Date('12/24/2023 00:00');
         document.getElementById('countdown').innerHTML += seconds + 'secs';
 }
 timer = setInterval(showRemaining, 1000);
+
+const table = document.getElementById('table');
+const modal = document.getElementById('ModalWind');
+const closeModal = document.getElementById('closeModal');
+
+table.onclick = () => {
+    modal.style.display = 'flex';
+    document.body.style.overflowY = 'hidden';
+}
+
+closeModal.onclick = () => {
+    modal.style.display = 'none';
+    document.body.style.overflowY = 'auto';
+}

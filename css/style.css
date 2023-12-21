@@ -9,6 +9,70 @@ body {
     overflow-x: hidden;
 }
 
+button {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000c6;
+  z-index: 100;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+
+.modalHolder {
+  background-color: #fff;
+  border-radius: .3rem;
+  z-index: 101;
+  max-width: 85vw;
+  max-height: 75vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.stMod1 {
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  rotate: -25deg;
+  font-size: 70px;
+}
+
+.stMod2 {
+  position: absolute;
+  right: 2%;
+  bottom: 3%;
+  rotate: 15deg;
+  font-size: 70px;
+}
+
+.modalContent {
+  color: #000000;
+  font-size: 24px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.modalHeader {
+  border-bottom: #000 solid 1px;
+  padding: 10px 10px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+}
+
 .wrapper {
     display: flex;
     align-items: center;
@@ -46,12 +110,40 @@ body {
     rotate: -20deg;
 }
 
+.stick2 {
+    font-size: 44px;
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    rotate: -20deg;
+}
+
 .card img {
     width: 175px;
     height: 200px;
 }
 
 .full1 {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #000;
+    gap: 10px;
+    rotate: 5deg;
+}
+
+.full {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #000;
+    gap: 10px;
+    rotate: -10deg;
+}
+
+.full3 {
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -74,6 +166,19 @@ body {
     }
 }
 
+.holderTextBTN {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonHolder {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+}
+
 .unknow1 {
     display: flex;
     font-size: 70px;
@@ -92,16 +197,6 @@ body {
     top: 10%;
     left: 5%;
     rotate: 15deg;
-}
-
-.unknow3 {
-    display: flex;
-    font-size: 70px;
-    align-items: center;
-    justify-content: center;
-    top: 10%;
-    left: 5%;
-    rotate: 5deg;
 }
 
 .wrapper #countdown {
