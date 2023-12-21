@@ -35,7 +35,7 @@ button {
   border-radius: .3rem;
   z-index: 101;
   max-width: 85vw;
-  max-height: 75vh;
+  max-height: 55vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@ button {
 .stMod1 {
   position: absolute;
   left: 2%;
-  top: 2%;
+  top: 12%;
   rotate: -25deg;
   font-size: 70px;
 }
@@ -52,7 +52,7 @@ button {
 .stMod2 {
   position: absolute;
   right: 2%;
-  bottom: 3%;
+  bottom: 12%;
   rotate: 15deg;
   font-size: 70px;
 }
