@@ -4,7 +4,7 @@
 }
 
 :root {
-  --shadow-color: #FF9E9E;
+  --shadow-color: hsl(186 100% 69%);
   --shadow-color-light: white;
 }
 
