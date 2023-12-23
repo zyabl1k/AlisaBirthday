@@ -9,7 +9,7 @@ let end = new Date('12/24/2023 00:00');
         let distance = end - now;
         if (distance < 0) {
             clearInterval(timer);
-            document.getElementById('countdown').innerHTML = 'EXPIRED!';
+            document.getElementById('countdown').innerHTML = 'Сегодня твой день!';
             return;
         }
         let days = Math.floor(distance / _day);
